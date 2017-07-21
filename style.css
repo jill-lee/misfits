@@ -1,0 +1,46 @@
+img {
+  width: 100%;
+}
+
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background-image: url(http://imgh.us/7OUjev.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size:  100% 100%;
+}
+
+.bio1 {
+  max-width: 960px;
+  font-family: Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 1.5em;
+  color: #fff;
+  padding: 30px;
+  text-align: left;
+}
+
+#discography {
+  font-family: creepster;
+  color: #CC0000;
+}
+
+.banner {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  overflow: hidden;
+}
+
+.container {
+	width: 50%;
+	margin: 30px auto;
+	overflow: hidden;
+}

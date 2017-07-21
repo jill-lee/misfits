@@ -1,133 +1,127 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Misfits</title>
-    <link href="https://fonts.googleapis.com/css?family=Creepster" rel="stylesheet">
+    <title>Portfolio</title>
+    <script>language="javascript">
+    $(document).ready(function() {
+      $(".rotate").css("height", $(".rotate").width());
+    });
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    $(document).ready(function() {
+      $(document).delegate(".open", "click", function(event) {
+        $(this).addClass("oppenned");
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        event.stopPropagation();
+      });
 
-<link href="style.css" type="text/css" rel="stylesheet">
+      $(document).delegate("body", "click", function(event) {
+        $(".open").removeClass("oppenned");
+      });
 
-<style>
-img {
-  width: 100%;
-}
+      $(document).delegate(".cls", "click", function(event) {
+        $(".open").removeClass("oppenned");
+
+        event.stopPropagation();
+      });
+      new xCroller(".demo");
+    });
 
 
-html,
-body {
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  margin: 0;
-  background-image: url(http://imgh.us/7OUjev.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size:  100% 100%;
-}
 
-.bio1 {
-  max-width: 960px;
-  font-family: Helvetica, sans-serif;
-  font-size: 13px;
-  line-height: 1.5em;
-  color: #fff;
-  padding: 30px;
-  text-align: left;
-}
+    </script>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,shrink-to-fit=no,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
 
-#discography {
-  font-family: creepster;
-  color: #CC0000;
-}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-.banner {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  width: 100%;
-  overflow: hidden;
-}
 
-.container {
-	width: 50%;
-	margin: 30px auto;
-	overflow: hidden;
-}
-</style>
+    <script src="//code.jquery.com/jquery-1.11.3.js"></script>
+    <script src="xcroller.js"></script>
+    <script src="jquery.fittext.js"></script>
+
   </head>
 
   <body>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta charset="utf-8">
+    <div id="parallax" class="parallax.scroll" data-xcmode="sticky">
 
-  <div style="opacity: 0.5;
-  filter: alpha(opacity=50)" class="wallpaper">
-
-    <img src="http://imgh.us/misfits_1.jpg" class="image1" alt="Banner" class="banner" /></div>
+     </div>
+     <div style="height:1000px;"></div>
 
 
-  <p style="margin-left: 16%" class="bio1">
-    <span>Misfits are an American punk rock band often recognized as the progenitors of the horror punk subgenre, blending punk rock and other musical influences with horror film themes and imagery.
-
-Founded in 1977 in Lodi, New Jersey the original lineup consisted of Glenn Danzig, bassist Jerry  Only, and drummer Manny Martínez. Danzig and Only were the only consistent members throughout the next six years. During this time they released several EPs and singles, and with Only's brother Doyle as guitarist, the albums Walk Among Us (1982) and Earth A.D./Wolfs Blood  (1983), both considered touchstones of the early-1980s hardcore punk movement.
-
-Misfits disbanded in 1983 and Danzig went on to form Samhain and then the eponymous Danzig. Several albums of reissued and previously unreleased material were issued after the group's dissolution, and their music became influential to punk rock, heavy metal, and alternative rock music of the late 1990s and early 2000s.
+     <!--header -->
 
 
-Read more <a  href="http://www.misfits.com/info/index.html" target="_blank">BIO</a>.</span>
-  </p>
+     <div class="container-wrap">
+       <div class="jill" style="top:10px; left:230px;">
+         <p>J</div>
+
+       <div class="jill" style="top:40px; left:340px; margin: 0;">i</div>
 
 
-  <!---Discography---->
+       <div class="jill" style="top:70px; left:410px; margin: 0 auto;">L</div>
 
 
-  <div id="discography" class="container">
-    <div class="row">
-      <h1 class="page-header">Discography</h1>
-      <div class="margin-bottom col-sm-6 col-md-3 text-center ">
-        <h4 style="color:#74BA2E"><strong>Box Set</strong></h4>
-        <a href="http://www.misfits.com/info/discography.html" target="_blank"><img src="http://imgh.us/download_132_1.jpg" alt="Box Set" /></a></div>
+       <div class="lee" style="top:200px; left:230px;">L</div>
 
 
-      <div class="margin-bottom col-xs-12 col-sm-6 col-md-3 text-center">
-        <h4 style="color:#74BA2E"><strong>Misfits Project 1950</strong></h4>
-        <a href="http://www.misfits.com/info/discography.html" target="_blank"> <img src="http://imgh.us/project1950_1.jpg" alt="Misfits Project 1950" /></a>
-      </div>
+       <div class="lee" style="top:220px; left:340px;">e</div>
+
+       <div class="lee" style="top:260px; left:440px;">e</div>
+     </div>
 
 
-      <div class="margin-bottom col-xs-12 col-sm-6 col-md-3 text-center">
-        <h4 style="color:#74BA2E"><strong>Famous Monsters</strong></h4>
-        <a href="http://www.misfits.com/info/discography.html" target="_blank"> <img src="http://imgh.us/famousmonsters.jpg" alt="famous Monsters" /></a>
-      </div>
+     <!--vertical text -->
 
-      <div class="margin-bottom col-xs-12 col-sm-6 col-md-3 text-center">
-        <h4 style="color:#74BA2E"><strong>Static Age</strong></h4>
-        <a href="http://www.misfits.com/info/discography.html" target="_blank"><img src="http://imgh.us/staticage_3.jpg" alt="Static Age" /></a>
-      </div>
+     <h4 class="text-rotated" style="top:18%; font-size:13px;"><b>BGC PHILIPPINES</b><h4>
+
+     <h4 class="text-rotated" style=" top:47%; left:25px; font-size:13px;"><b>JILL LEE</b><h4>
+
+     <h4 class="text-rotated" style="top:78%; font-size:13px;"><b>WEB DEVELOPER</b><h4></div>
+
+   <!--- offset nav bar TOOK ME FORVER!!! -->
+
+   	<div class="open">
+
+     <span class="cls"></span>
+
+     <span>
+
+       <ul class="sub-menu ">
+
+         <li> <a href="#">HOME</a></li>
+         <li> <a href="#">WORK</a></li>
+         <li> <a href="#">CONTACT</a></li>
+
+       </ul>
+
+     </span>
+   <span class="cls"></span>
 
     </div>
-  </div>
-  </div>
 
 
-  <br><br>
+       <div id="h-intro-jill-txt-wrap">
+         <div class="col-sm-5">
 
-  <footer>
-    <div class="row">
-      <div class="col-md-offset-4 col-md-4 text-center">
-        <p style="color:white">Coded by <a target="_blank" href="http://github.com/phoenix-burn">Jill Lee</a></p>
-      </div>
-    </div>
-  </footer>
+         <div class="h-intro-jill-txt-wrap">
+           <p class="h-intro-jill-txt"><span id="h-intro-jill-txt-spe">I’M A WEB DEVELOPER&nbsp;</span>&nbsp;from the Philippines living in Fort Bonifacio, where I work as an application administrator and a web designer for Aggro Boardworld. With a background in software technology, my strength lies in website and app design.</p></div></div>
+
+           <div class="col-sm-4">
+         <div class="h-intro-jill-txt-wrap">
+           <p id="h-intro-jill-txt-last" class="h-intro-jill-txt">If you want to know more about me, my work or if you want to offer me a lot of money, feel free to contact me on jilllee.ace at outlook.com.</p></div></div></div>
 
 
-</body>
+       <TD style="border-left: 1px solid cyan; padding: 5px;">
+   <table cellspacing="5" border="0" cellpadding="0">
+   <tr valign="top" align="center">
+   <td width="300"></td>
+   <td width="1" bgcolor="#FF3399"><BR></td>
+   <td width="100" valign="top" align="center">
 
+   </body>
 
 </html>
